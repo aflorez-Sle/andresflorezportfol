@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Andres Felipe Florez Ospina | IT Specialist</title>
+<style>
+:root{--bg:#f3f5f2;--ink:#14231c;--mute:#5b6b63;--acc:#1f6f54;--line:#d5dcd7;--card:#fff;--b1:#2f9a77;--b2:#8fb8d6;--b3:#b9d9c4;--bo:.38;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1a15;--ink:#e8efe9;--mute:#9db0a5;--acc:#5fd0a3;--line:#274035;--card:#15241c;--b1:#2f9a78;--b2:#2b6f96;--b3:#3d7a5c;--bo:.28}}
+:root[data-theme="dark"]{--bg:#0f1a15;--ink:#e8efe9;--mute:#9db0a5;--acc:#5fd0a3;--line:#274035;--card:#15241c;--b1:#2f9a78;--b2:#2b6f96;--b3:#3d7a5c;--bo:.28}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 Georgia,"Times New Roman",serif}
+header{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);background:color-mix(in srgb,var(--bg) 80%,transparent);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);z-index:5}
+nav{max-width:860px;margin:0 auto;padding:12px 20px;display:flex;gap:6px;flex-wrap:wrap;align-items:center;font-family:system-ui,sans-serif;font-size:15px}
+nav .logo{font-weight:700;margin-right:auto;font-family:Georgia,serif;font-size:19px}
+nav a{color:var(--mute);text-decoration:none;padding:6px 12px;border-radius:20px}
+nav a:hover{color:var(--ink)}
+nav a.on{background:var(--acc);color:var(--bg)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+main{max-width:860px;margin:0 auto;padding:48px 20px 80px}
+section{display:none}
+section.on{display:block}
+h1{font-size:clamp(2.2rem,6vw,3.6rem);line-height:1.1;margin:0 0 .4em;letter-spacing:-.02em}
+h2{font-size:1.5rem;margin:1.6em 0 .4em}
+p{max-width:62ch}
+.mute{color:var(--mute)}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:20px}
+.item{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px}
+.item h3{margin:0 0 4px;font-size:1.1rem}
+.item p{margin:0;font-size:.95rem;color:var(--mute)}
+.tl{border-left:2px solid var(--acc);padding-left:18px;margin-top:20px}
+.tl div{margin-bottom:22px}
+.tl b{display:block}
+.kw{list-style:none;padding:0;margin:12px 0 28px;display:flex;flex-wrap:wrap;gap:8px;font-family:system-ui,sans-serif;font-size:14px}
+.kw li{border:1px solid var(--acc);color:var(--acc);border-radius:20px;padding:4px 14px}
+.k{text-decoration:underline;text-decoration-color:var(--acc);text-decoration-thickness:2px;text-underline-offset:4px}
+section h3{font-size:1.1rem;margin:1.2em 0 .2em}
+.item h3{margin:0 0 4px}
+.pp{margin:12px 0 28px;padding:6px 0 6px 20px;border-left:4px solid var(--acc);font-size:1.2rem;line-height:1.6;font-style:italic;max-width:62ch}
+.bl{margin:6px 0 0;padding-left:22px;max-width:62ch}
+.bl li{margin:4px 0}
+.bl li::marker{color:var(--acc)}
+.boxes{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin:18px 0 28px}
+.box{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--acc);border-radius:10px;padding:16px 18px}
+.box h3,section .box h3{margin:0 0 8px;font-size:1.1rem}
+.box p{margin:0 0 8px;font-size:.95rem}
+.box .bl{margin:0;padding-left:20px;font-size:.95rem}
+.bg{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
+.blob{position:absolute;width:60vmax;height:60vmax;border-radius:50%;opacity:var(--bo);will-change:transform}
+.blob.a{left:-15vmax;top:-20vmax;background:radial-gradient(circle,var(--b1) 0%,transparent 65%);animation:da 42s ease-in-out infinite alternate}
+.blob.b{right:-20vmax;top:15vh;background:radial-gradient(circle,var(--b2) 0%,transparent 65%);animation:db 54s ease-in-out infinite alternate}
+.blob.c{left:15vw;bottom:-30vmax;background:radial-gradient(circle,var(--b3) 0%,transparent 65%);animation:dc 66s ease-in-out infinite alternate}
+@keyframes da{to{transform:translate3d(14vw,10vh,0) scale(1.12)}}
+@keyframes db{to{transform:translate3d(-12vw,14vh,0) scale(1.08)}}
+@keyframes dc{to{transform:translate3d(10vw,-12vh,0) scale(1.15)}}
+section.on{animation:enter .55s cubic-bezier(.2,.7,.2,1) both}
+@keyframes enter{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+nav a{transition:background-color .25s,color .25s}
+.item,.box{transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease}
+.item:hover,.box:hover{transform:translateY(-3px);border-color:var(--acc);box-shadow:0 8px 22px -14px var(--acc)}
+.btn{transition:transform .2s ease,opacity .2s ease}
+.btn:hover{transform:translateY(-2px);opacity:.92}
+.kw,.k{transition:text-decoration-color .3s}
+.k:hover{text-decoration-color:var(--ink)}
+@media (prefers-reduced-motion:reduce){.blob,section.on{animation:none}.item,.box,.btn,nav a{transition:none}.item:hover,.box:hover,.btn:hover{transform:none}}
+.btn{display:inline-block;background:var(--acc);color:var(--bg);padding:10px 18px;border-radius:8px;text-decoration:none;font-family:system-ui,sans-serif;font-size:15px;border:0;cursor:pointer}
+form{display:grid;gap:12px;max-width:480px;margin-top:20px;font-family:system-ui,sans-serif}
+input,textarea{width:100%;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink);font:inherit}
+label{font-size:14px;color:var(--mute)}
+</style>
+</head>
+<body>
+<div class="bg" aria-hidden="true"><div class="blob a"></div><div class="blob b"></div><div class="blob c"></div></div>
+<header>
+<nav aria-label="Menú principal">
+<span class="logo">Andres F. Florez</span>
+<a href="#about" data-p="about">About me</a>
+<a href="#resume" data-p="resume">Resume</a>
+<a href="#certificates" data-p="certificates">Certificates</a>
+<a href="#projects" data-p="projects">Projects</a>
+<a href="#7hhep" data-p="7hhep">7HHEP</a>
+<a href="#contact" data-p="contact">Contact</a>
+</nav>
+</header>
+<main>
+
+<section id="about">
+<h1>Andres Felipe Florez Ospina</h1>
+<p><b>IT Specialist</b></p>
+<p>I am an IT Specialist with broad knowledge and hands-on experience across various areas of <span class="k">Information Technology</span>, including <span class="k">IT infrastructure</span>, <span class="k">systems administration</span>, <span class="k">networking</span>, <span class="k">technical support</span> and <span class="k">security</span>. I enjoy designing, deploying and maintaining reliable environments, solving complex technical problems and making sure technology works for the people and businesses that depend on it.</p>
+<p>I am committed to continuous learning and to applying best practices that keep systems stable, secure and efficient.</p>
+<h2>Technical and soft Skills</h2>
+<h3>Hard skills</h3>
+<p>IT specialist · Cross-functional technical operations, systems, networking, troubleshooting, and support.</p>
+<h3>Soft skills</h3>
+<p>Time management, and I am good at communication and have a lot of empathy.</p>
+<h2>Personal paradigm</h2>
+<blockquote class="pp">I am a person who is constantly growing. I am not defined by my mistakes, my circumstances, or other people’s opinions, but by the decisions I make and the person I choose to become.</blockquote>
+<div class="boxes">
+<div class="box"><h3>My purpose</h3>
+<ul class="bl">
+<li>Live a life with meaning.</li>
+<li>Enjoy the present.</li>
+<li>Keep learning.</li>
+<li>Leave a positive mark on the people around me.</li>
+</ul></div>
+<div class="box"><h3>My core beliefs</h3>
+<ul class="bl">
+<li>I can always learn and improve.</li>
+<li>Time is precious.</li>
+<li>Mistakes help me grow.</li>
+<li>Happiness is in how I see what I have.</li>
+<li>My comfort zone is not my limit.</li>
+<li>I need to take care of my mind and body.</li>
+<li>Healthy relationships matter.</li>
+<li>I stay true to my values.</li>
+</ul></div>
+<div class="box"><h3>My principles</h3>
+<ul class="bl">
+<li>Be authentic.</li>
+<li>Take responsibility.</li>
+<li>Practice gratitude.</li>
+<li>Stay disciplined.</li>
+<li>Respect others.</li>
+<li>Stay curious.</li>
+<li>Find balance.</li>
+</ul></div>
+<div class="box"><h3>How I want to live</h3>
+<ul class="bl">
+<li>Seize opportunities.</li>
+<li>Spend time with the people I love.</li>
+<li>Take care of my health.</li>
+<li>Chase my dreams and enjoy the little things.</li>
+<li>No more waiting for the “perfect moment.”</li>
+</ul></div>
+<div class="box"><h3>How I face challenges</h3>
+<p>Problems are part of life. When something doesn’t go as expected, I ask myself:</p>
+<ul class="bl">
+<li>What can I learn from this?</li>
+<li>What’s within my control?</li>
+<li>What can I do now?</li>
+</ul></div>
+<div class="box"><h3>My vision of success</h3>
+<ul class="bl">
+<li>Success isn’t just about money or recognition.</li>
+<li>For me, it’s looking back and feeling that I stayed true to myself, grew, loved and enjoyed the journey.</li>
+</ul></div>
+</div>
+<p class="pp">I want to build a life that doesn’t need to escape from it.</p>
+<p><a class="btn" href="#projects">Ver mis proyectos</a></p>
+</section>
+
+<section id="resume">
+<h1>Resume</h1>
+<h2>Experiencia</h2>
+<div class="tl">
+<div><b>Puesto · Empresa</b><span class="mute">2023 – Actualidad</span><p>Describe tus responsabilidades y logros principales.</p></div>
+<div><b>Puesto anterior · Empresa</b><span class="mute">2020 – 2023</span><p>Describe lo que hiciste y qué lograste.</p></div>
+</div>
+<h2>Formación</h2>
+<div class="tl">
+<div><b>SMX 2</b><span class="mute">2026 – 2027</span></div>
+</div>
+<h2>Habilidades</h2>
+<p>Habilidad 1, Habilidad 2, Habilidad 3, Habilidad 4</p>
+</section>
+
+<section id="certificates">
+<h1>Certificates</h1>
+<div class="grid">
+<div class="item"><h3>Nombre del certificado</h3><p>Entidad emisora · 2025</p></div>
+<div class="item"><h3>Nombre del certificado</h3><p>Entidad emisora · 2024</p></div>
+<div class="item"><h3>Nombre del certificado</h3><p>Entidad emisora · 2023</p></div>
+</div>
+</section>
+
+<section id="projects">
+<h1>Projects</h1>
+<div class="grid">
+<div class="item"><h3>Proyecto uno</h3><p>Qué es, qué problema resuelve y qué tecnologías usaste.</p></div>
+<div class="item"><h3>Proyecto dos</h3><p>Qué es, qué problema resuelve y qué tecnologías usaste.</p></div>
+<div class="item"><h3>Proyecto tres</h3><p>Qué es, qué problema resuelve y qué tecnologías usaste.</p></div>
+</div>
+</section>
+
+<section id="7hhep">
+<h1>7HHEP</h1>
+<p>Esta página es para 7HHEP. Dime de qué trata y la completo; mientras tanto, puedes escribir aquí su descripción, objetivos y resultados.</p>
+<div class="grid">
+<div class="item"><h3>Descripción</h3><p>Texto pendiente.</p></div>
+<div class="item"><h3>Objetivos</h3><p>Texto pendiente.</p></div>
+</div>
+</section>
+
+<section id="contact">
+<h1>Contact</h1>
+<p>¿Quieres hablar conmigo? Escríbeme y te respondo lo antes posible.</p>
+<p><a class="btn" href="mailto:tucorreo@ejemplo.com">tucorreo@ejemplo.com</a></p>
+<form onsubmit="event.preventDefault();location.href='mailto:tucorreo@ejemplo.com?subject='+encodeURIComponent('Contacto desde la web')+'&body='+encodeURIComponent(document.getElementById('m').value)">
+<div><label for="n">Nombre</label><input id="n" required></div>
+<div><label for="m">Mensaje</label><textarea id="m" rows="5" required></textarea></div>
+<button class="btn" type="submit">Enviar mensaje</button>
+</form>
+</section>
+
+</main>
+<script>
+(function(){
+var ids=["about","resume","certificates","projects","7hhep","contact"];
+function show(){
+var h=(location.hash||"#about").slice(1);
+if(ids.indexOf(h)<0)h="about";
+ids.forEach(function(i){document.getElementById(i).classList.toggle("on",i===h)});
+document.querySelectorAll("nav a[data-p]").forEach(function(a){a.classList.toggle("on",a.dataset.p===h)});
+window.scrollTo(0,0);
+}
+window.addEventListener("hashchange",show);
+show();
+})();
+</script>
+</body>
+</html>
